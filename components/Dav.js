@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/3D SANIDAD.gltf");
+  const { nodes, materials } = useGLTF("/4D SANIDAD.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -50,6 +50,22 @@ export function Dav(props) {
         material={materials["Material.001"]}
         position={[-0.48, 0.28, -0.35]}
         rotation={[Math.PI / 2, 0, Math.PI]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plano004.geometry}
+        material={materials["Material.001"]}
+        position={[-0.36, 0, 0.67]}
+        rotation={[0, -1.57, 0]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Texto003.geometry}
+        material={materials["Material.001"]}
+        position={[0.04, 0.95, 0.14]}
+        rotation={[Math.PI / 2, 0, -Math.PI]}
       />
       <group position={[-0.32, 0, -0.02]}>
         <mesh
@@ -175,4 +191,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/3D SANIDAD.gltf");
+useGLTF.preload("/4D SANIDAD.gltf");
