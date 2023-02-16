@@ -1,0 +1,68 @@
+/* :root{
+    --auxiliar1: #dfac12;
+    --auxiliar2 : #00814A;
+  } */
+  
+
+@font-face {
+    font-family: 'ITC Eras Demi';
+    src: url('../public/ITC Eras Demi.ttf') format('truetype');
+  }
+  
+
+
+
+
+
+.container {
+    /* background-color: #00814A; */
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,.3), -4px -4px 4px 0px rgba(255,255,255,.5) ;
+
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    border-radius: .5rem;
+}
+.movil {
+    /* background-color: #00814A; */
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,.3), -4px -4px 4px 0px rgba(255,255,255,.5) ;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: .5rem;
+}
+
+
+@media only screen and (max-width: 444px){
+    .container{
+        background-color: #00814A;
+    }
+}
+
+.titulo {
+    margin: 11px 11px;
+    font-family: 'ITC Eras Demi', sans-serif;
+    color:'#dfac12';
+    font-size: 1rem;
+
+
+}
+
+.telefono {
+    margin: 11px 11px;
+    font-family: 'ITC Eras Demi', sans-serif;
+    color:'#dfac12';
+    font-size: 1rem;
+}
+
+.canvas {
+    margin: auto;
+    position: relative
+}
+
+/* .dav {
+    height: 90% ;
+} */
+
