@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/4D SANIDAD.gltf");
+  const { nodes, materials } = useGLTF("/4D EROSKI.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -32,163 +32,45 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto.geometry}
         material={materials["Material.001"]}
-        position={[-0.27, -0.19, -0.35]}
-        rotation={[Math.PI / 2, 0, Math.PI]}
+        position={[0.11, 0, 0]}
+        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Texto001.geometry}
         material={materials["Material.001"]}
-        position={[0.07, -0.19, -0.04]}
-        rotation={[Math.PI / 2, 0, Math.PI]}
+        position={[0.01, 0, 0.14]}
+        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Texto002.geometry}
         material={materials["Material.001"]}
-        position={[-0.48, 0.28, -0.35]}
-        rotation={[Math.PI / 2, 0, Math.PI]}
+        position={[0.1, 0.02, -0.1]}
+        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plano004.geometry}
-        material={materials["Material.001"]}
-        position={[-0.36, 0, 0.67]}
-        rotation={[0, -1.57, 0]}
+        geometry={nodes["TQ2_ARD-geom"].geometry}
+        material={materials.TQ2_ARD_front}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Texto003.geometry}
-        material={materials["Material.001"]}
-        position={[0.04, 0.95, 0.14]}
-        rotation={[Math.PI / 2, 0, -Math.PI]}
+        geometry={nodes["TQ2_ARD-geom_1"].geometry}
+        material={materials.TQ2_ARD_back}
       />
-      <group position={[-0.32, 0, -0.02]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom"].geometry}
-          material={materials.TQ_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom_1"].geometry}
-          material={materials.TQ_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom_2"].geometry}
-          material={materials.TQ_ARD_edge}
-        />
-      </group>
-      <group position={[0.27, 0, 0.38]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom"].geometry}
-          material={materials.TQ_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom_1"].geometry}
-          material={materials.TQ_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom_2"].geometry}
-          material={materials.TQ_ARD_edge}
-        />
-      </group>
-      <group position={[-0.31, 0.79, -0.02]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom001"].geometry}
-          material={materials["TQ_ARD_front.001"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom001_1"].geometry}
-          material={materials["TQ_ARD_back.001"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom001_2"].geometry}
-          material={materials["TQ_ARD_edge.001"]}
-        />
-      </group>
-      <group position={[0.27, 0.93, 0.38]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom001"].geometry}
-          material={materials["TQ_ARD_front.001"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom001_1"].geometry}
-          material={materials["TQ_ARD_back.001"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom001_2"].geometry}
-          material={materials["TQ_ARD_edge.001"]}
-        />
-      </group>
-      <group position={[-0.31, -0.29, 0.16]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom004"].geometry}
-          material={materials["TQ_ARD_front.004"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom004_1"].geometry}
-          material={materials["TQ_ARD_back.004"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom004_2"].geometry}
-          material={materials["TQ_ARD_edge.004"]}
-        />
-      </group>
-      <group position={[0.26, -0.02, 0.56]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom004"].geometry}
-          material={materials["TQ_ARD_front.004"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom004_1"].geometry}
-          material={materials["TQ_ARD_back.004"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom004_2"].geometry}
-          material={materials["TQ_ARD_edge.004"]}
-        />
-      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TQ2_ARD-geom_2"].geometry}
+        material={materials.TQ2_ARD_edge}
+      />
     </group>
   );
 }
 
-useGLTF.preload("/4D SANIDAD.gltf");
+useGLTF.preload("/4D EROSKI.gltf");
